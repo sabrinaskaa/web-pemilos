@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+hey why u here? what u lookin for?
