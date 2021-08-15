@@ -34,21 +34,6 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
@@ -65,4 +50,39 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## 
+# How To Install and Run laravel sail?
+
+!important!
+
+## Installation
+
+1) Dipastikan connect dengan internet
+
+2) Os base on linux atau Windows WSL dan install git
+
+3) Download sc ini menggunakan command
+   """bash
+   git clone https://github.com/adzkyyy/web-pemilos.git 
+   """ 
+
+4) Install dependencies
+   """bash
+   cd web-pemilos && composer install
+   """
+
+5) Membuat alias path untuk binary sail
+   """bash
+   echo "alias sail='vendor/bin/sail'" > ~/.bash_aliases && source ~/.bash_aliases
+   """
+
+6) copy file .env.example menjadi .env untuk settingan konfigurasi
+
+
+## Running
+
+1) Dipastikan untuk connect ke internet untuk menginstall image dari registry  
+
+2) Masuk ke directory web-laravel dan ketik command
+   """bash
+   sail up -d 
+   """
