@@ -61,19 +61,19 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 2) Os base on linux atau Windows WSL dan install git
 
 3) Download sc ini menggunakan command
-   """bash
+   ```bash
    git clone https://github.com/adzkyyy/web-pemilos.git 
-   """ 
+   ``` 
 
 4) Install dependencies
-   """bash
+   ```bash
    cd web-pemilos && composer install
-   """
+   ```
 
 5) Membuat alias path untuk binary sail
-   """bash
+   ```bash
    echo "alias sail='vendor/bin/sail'" > ~/.bash_aliases && source ~/.bash_aliases
-   """
+   ```
 
 6) copy file .env.example menjadi .env untuk settingan konfigurasi
 
@@ -83,6 +83,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 1) Dipastikan untuk connect ke internet untuk menginstall image dari registry  
 
 2) Masuk ke directory web-laravel dan ketik command
-   """bash
+   ```bash
    sail up -d 
-   """
+   ```
