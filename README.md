@@ -51,24 +51,43 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 1) Dipastikan connect dengan internet
 
-2) Os base on linux atau Windows WSL dan install git
+2) Os base on linux atau Windows WSL
 
-3) Download sc ini menggunakan command
+3) Install [git](https://git-scm.com/downloads/)  & [composer](https://getcomposer.org)
+
+4) Download sc ini menggunakan command
    ```bash
    git clone https://github.com/adzkyyy/web-pemilos.git 
    ``` 
 
-4) Install dependencies
+5) Enable atau install extension php yang dibutuhkan untuk composer
+
+6) Install [docker](https://docs.docker.com/engine/install) & [docker-compose](https://docs.docker.com/compose/install), untuk windows menggunakan docker desktop
+
+7) Pastikan untuk setup grup docker pada user
+   ```bash
+   sudo usermod -aG docker $USER
+   ```
+
+8) Install dependencies
    ```bash
    cd web-pemilos && composer install
    ```
 
-5) Membuat alias path untuk binary sail
+9) Membuat alias path untuk binary sail
    ```bash
    echo "alias sail='vendor/bin/sail'" > ~/.bash_aliases && source ~/.bash_aliases
    ```
 
-6) copy file .env.example menjadi .env untuk settingan konfigurasi
+10) Copy file .env.example menjadi .env untuk settingan konfigurasi, lalu untuk database diubah menjadi
+    ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=mysql
+    DB_PORT=3306
+    DB_DATABASE=web_pemilos
+    DB_USERNAME=sail
+    DB_PASSWORD=password
+    ``` 
 
 
 ## Running
@@ -79,3 +98,19 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
    ```bash
    sail up -d 
    ```
+
+3) Generate key
+   ```bash
+   sail php artisan key:generate
+   ```
+
+4) Migration database
+   ```bash
+   sail php artisan migrate:fresh
+   ```
+
+5) Aplikasi pemilos bisa dibuka pada http://localhost
+
+TERIMA KASIH
+
+Created by Muhammad Zaky Adzkiya
