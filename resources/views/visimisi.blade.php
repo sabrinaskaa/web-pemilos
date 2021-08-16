@@ -46,13 +46,13 @@
             <div class="visi-misi-card right-card">
                 <div class="right-side">
 
-                    <span class="kandidat-title">Kandidat 1</span>
+                    <span class="kandidat-title">Kandidat {{ $visimisi->id }}</span>
                     <ul class="list-nama" style="list-style: disc;">
                         <li class="nama-p">
-                            Ketua : Naruto
+                            Ketua : {{ $visimisi->ketua }}
                         </li>
                         <li class="nama-p">
-                            Wakil : Solo squad bro
+                            Wakil : {{ $visimisi->wakil }}
                         </li>
                     </ul>
 
@@ -74,9 +74,8 @@
         </div>
     @else
     <div class="text-center">
-        <img src="assets/img/discord.png" class="img-fluid rounded">
     </div>
-    <h1 class="mt-5 text-center">you've already chosen</h1>        
+    <h1 class="mt-5 text-center">You've Already Chosen</h1>        
     @endif
 
 </body>
