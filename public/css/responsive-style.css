@@ -280,18 +280,26 @@
   @media screen and (max-width: 759.5px){
     .card-row{
       margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    .card-section {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      box-sizing: border-box;
+      padding: 0 18px 3px;
     }
   }
 
   @media screen and (max-width: 550.5px){
-    .card-row{
-      margin-top: -3rem;
+    .card-row {
+      margin-top: 2rem;
     }
   }
 
   @media screen and (max-width: 480.5px){
     .card-row{
-      margin-top: -4rem;
+      margin-top: 2rem;
     }
   }
 
@@ -317,14 +325,14 @@
       width: 320px;
       height: 250px;
     }
-    .visi-title, .misi-title{
+    .visi-title, .misi-title, .kandidat-title{
       font-size: var(--h2-font-size);
     }
 
     .vote-button{
       width: 150px;
       height: 45px;
-      margin-left: 5rem;
+      margin-left: 4.25rem;
       font-size: 13px;
       font-weight: 650;
     }
@@ -332,7 +340,7 @@
 
   @media screen and (max-width: 759.5px){
     .visi-misi-row{
-      margin-top: 7rem;
+      margin-top: 5rem;
     }
   }
 
@@ -371,28 +379,16 @@
       height: 250px;
       margin-top: .7rem;
     }
-    .visi-title, .misi-title{
+    .visi-title, .misi-title, .kandidat-title{
       font-size: var(--h2-font-size);
     }
 
     .vote-button{
       width: 150px;
       height: 45px;
-      margin-left: 3.25rem;
+      margin-left: 2.25rem;
       font-size: 13px;
       font-weight: 650;
-    }
-  }
-
-  @media screen and (max-width: 550.5px){
-    .visi-misi-row{
-      margin-top: -1.5rem;
-    }
-  }
-
-  @media screen and (max-width: 360.5px){
-    .visi-misi-row{
-      margin-top: -2.5rem;
     }
   }
 
@@ -425,7 +421,7 @@
     .vote-button{
       width: 120px;
       height: 43px;
-      margin-left: 2.25rem;
+      margin-left: 1.5rem;
       font-size: 13px;
       font-weight: 650;
     }
@@ -714,19 +710,9 @@
   }
 
   @media screen and (max-width: 550.5px){
-    .card-row{
-      margin-top: -3rem;
-    }
-
     .main-admin{
       margin-top: 6.5rem;
       margin-bottom: 4rem;
-    }
-  }
-
-  @media screen and (max-width: 480.5px){
-    .card-row{
-      margin-top: -4rem;
     }
   }
 
