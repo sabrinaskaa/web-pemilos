@@ -114,6 +114,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
   .card {
@@ -145,7 +147,7 @@
       width: 100%;
       bottom: 0;
       box-sizing: border-box;
-      padding: 0 20px 23px;
+      padding: 0 20px 12px;
   }
   .card-text {
       font-size: 14px;
@@ -197,8 +199,7 @@
   /* ==========   VISI MISI SECTION   ========== */
 
   .visi-misi-row{
-    margin-top: -1rem;
-    margin-bottom: 4rem;
+    margin-top: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -271,8 +272,12 @@
     overflow: auto;
   }
 
-  .nama-p{
-    font-weight: 500;
+  .kandidat-title{
+    font-size: var(--h1-font-size);
+    font-family: var(--font-theme);
+    font-weight: 600;
+    line-height: 2.5;
+    color: var(--gray-dark);
   }
 
   .right-side ul{
@@ -294,7 +299,7 @@
     height: 50px;
     border-radius: 25px;
     margin-top: 2rem;
-    margin-left: 5rem;
+    margin-left: 4.5rem;
     margin-bottom: 2rem;
     font-weight: 700;
     font-size: 14px;
@@ -513,11 +518,4 @@
     font-family: var(--font-theme);
     font-weight: 300;
   }
-  .nav-back{
-    text-decoration: none;
-    color: var(--gray-dark);
-    border: none;
-  }
-  .nav-back:hover{
-    color: var(--gray-dark);
-  }
+  
