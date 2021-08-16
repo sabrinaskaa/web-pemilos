@@ -45,13 +45,34 @@ nav ul {
   font-weight: 400;
 }
 
-.nav-visi-misi{
-  display: flex;
-  justify-content: left;
+.nav_title_2{
+  margin-top: .5rem;
+  font-size: var(--biggest-font-size);
+  color: var(--gray-dark);
+  font-family: var(--font-theme);
+  font-weight: 400;
 }
 
-.back-nav{
-  margin-left: .5rem;
+.nav-visi-misi{
+  display: flex;
+  z-index: var(--z-fixed);
+  background-color: #ecf0f3;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  font-family: var(--body-font);
+  justify-content: left;
+  height: 4rem;
+}
+
+.nav-back{
+  text-decoration: none;
+  color: var(--gray-dark);
+  border: none;
+}
+.nav-back:hover{
+  color: var(--purple);
+  text-decoration: none;
 }
 
 .title-hasil{
@@ -277,12 +298,30 @@ nav ul {
     margin-top: 2rem;
     font-size: 1.75rem;
   }
+
+  .nav-visi-misi{
+    padding-left: 1.5rem;
+  }
+
+  .nav_title_2{
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
 }
 
 @media screen and (max-width: 324px){
   .nav_title{
     margin-top: 2rem;
     font-size: 1.5rem;
+  }
+
+  .nav-visi-misi{
+    padding-left: 1.25rem;
+  }
+
+  .nav_title_2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
   .title-daftar{
@@ -296,9 +335,13 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 282px){
+@media screen and (max-width: 287px){
   .nav_title{
     margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .nav_title_2{
     font-size: 1.25rem;
   }
 }
