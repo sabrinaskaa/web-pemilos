@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\Candidate;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use Illuminate\Support\Str;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,55 +18,21 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        User::create([
+
+        User::create(
+        [
             'nis' => '123456',
             'roles' => 'admin',
             'nama' => 'Admin',
             'kelas' => 'Admin',
-            
-            'password' => bcrypt('123456'),
+            'password' => '123456',
         ]);
-        User::create([
-            'nis' => '654321',
-            'nama' => 'Siswa Pertama',
-            'kelas' => 'XI KGSP 2',
-            'password' => bcrypt('123456'),
-        ]);
-        User::create([
-            'nis' => '111112',
-            'nama' => 'Siswa Kedua',
-            'kelas' => 'XII TME 1',
-            'password' => bcrypt('123456'),
-        ]);
-        User::create([
-            'nis' => '111111',
-            'nama' => 'Siswa Kedua',
-            'kelas' => 'XII TME 1',
-            'password' => bcrypt('123456'),
-        ]);
-        User::create([
-            'nis' => '111114',
-            'nama' => 'Siswa Kedua',
-            'kelas' => 'XII TME 1',
-            'password' => bcrypt('123456'),
-        ]);
-        User::create([
-            'nis' => '111161',
-            'nama' => 'Siswa Kedua',
-            'kelas' => 'XII TME 1',
-            'password' => bcrypt('123456'),
-        ]);
-        User::create([
-            'nis' => '110161',
-            'nama' => 'Siswa Kedua',
-            'kelas' => 'XII TME 1',
-            'password' => bcrypt('123456'),
-        ]);
-
+     
+ 
         Candidate::create([
             "slug"=>"visi-misi-paslon-1",
-            "ketua"=>"a",
-            "wakil"=>"b",
+            "ketua"=>"apsn",
+            "wakil"=>"aksdakdmamsdkasd",
             "visi"=> "<p>ini visi pertama</p>",
             "misi"=> "<ul class=list-misi style='list-style: disc'><li class='misi-p'>Membentuk wadah belajar kelompok tsherpadu bagi    siswa.</li><li class='misi-p'>
             Menyelenggarakan perlombaan yang mendidik.</li><li class='misi-p'>
@@ -73,13 +41,12 @@ class DatabaseSeeder extends Seeder
             Ikut membantu penyelenggaran kegiatan hari besar keagamaan.</li></ul>",
             "foto"=> "image.jpg",
         ]);
-
         Candidate::create([
             "slug"=>"visi-misi-paslon-2",
-            "ketua"=>"a",
-            "wakil"=>"b",
-            "visi"=> "<p>ini visi kedua</p>",
-            "misi"=> "<ul class=list-misi style='list-style: disc'><li class='misi-p'>Membentuk wadah belajar kelompok terpadu bagi    siswa.</li><li class='misi-p'>
+            "ketua"=>"ammkxz",
+            "wakil"=>"aoskdoas",
+            "visi"=> "<p>ini visi pertama</p>",
+            "misi"=> "<ul class=list-misi style='list-style: disc'><li class='misi-p'>Membentuk wadah belajar kelompok tsherpadu bagi    siswa.</li><li class='misi-p'>
             Menyelenggarakan perlombaan yang mendidik.</li><li class='misi-p'>
             Menyelenggarakan kegiatan masa orientasi siswa yang jauh dari kesan pembodohan.</li><li class='misi-p'>
             Aktif belajar di media sosial seperti Brainly, Edmodo, dan Quipper.</li><li class='misi-p'>
@@ -88,10 +55,10 @@ class DatabaseSeeder extends Seeder
         ]);
         Candidate::create([
             "slug"=>"visi-misi-paslon-3",
-            "ketua"=>"a",
-            "wakil"=>"b",
-            "visi"=> "<p>ini visi ketiga</p>",
-            "misi"=> "<ul class=list-misi style='list-style: disc'><li class='misi-p'>Membentuk wadah belajar kelompok terpadu bagi    siswa.</li><li class='misi-p'>
+            "ketua"=>"aadas",
+            "wakil"=>"akdmasd",
+            "visi"=> "<p>ini visi pertama</p>",
+            "misi"=> "<ul class=list-misi style='list-style: disc'><li class='misi-p'>Membentuk wadah belajar kelompok tsherpadu bagi    siswa.</li><li class='misi-p'>
             Menyelenggarakan perlombaan yang mendidik.</li><li class='misi-p'>
             Menyelenggarakan kegiatan masa orientasi siswa yang jauh dari kesan pembodohan.</li><li class='misi-p'>
             Aktif belajar di media sosial seperti Brainly, Edmodo, dan Quipper.</li><li class='misi-p'>

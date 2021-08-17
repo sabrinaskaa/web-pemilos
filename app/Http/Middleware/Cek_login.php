@@ -28,6 +28,6 @@ class Cek_login
             return $next($request);
         } 
 
-       return redirect('/login')->with('error', 'you dont have any permission of this you son of a beach');
+       return redirect('/login')->with('error', 'you dont have any permission');
     }
 }

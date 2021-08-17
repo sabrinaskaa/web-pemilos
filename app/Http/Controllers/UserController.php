@@ -20,10 +20,13 @@ class UserController extends Controller
             $daftar->where('nis', 'like', '%' . request('search'). '%')
                    ->orWhere('nama','like','%'.request('search').'%')
                    ->orWhere('kelas','like','%'.request('search').'%')
-                   ->orWhere('status','like','%'.request('search').'%');
+                   ->orWhere('status','like','%'.request('search').'%')
+                   ->orWhere('candidate_id','like','%'.request('search').'%');
         }
         return view('admin.daftar',[
             "title" => "DAFTAR SISWA",
+            "active" => "daftar",
+            "name" => "DAFTAR SISWA",
             "daftar" => $daftar->paginate(5)->withQueryString(),
             
         ])->with('i', (request()->input('page', 1) - 1) * 5);

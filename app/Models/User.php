@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Facades\Hash;
 use App\Models\Candidate;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -17,8 +18,8 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $guarded = [
-        'id',
+    protected $fillable = [
+        'nis', 'nama', 'kelas','password'
     ];
 
     /**
@@ -27,8 +28,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
         'remember_token',
+        'password'
     ];
 
     /**
@@ -42,5 +43,9 @@ class User extends Authenticatable
 
     public function candidate(){
         return $this->belongsTo(Candidate::class);
+    }
+
+    public function setPasswordAttribute($password){
+        $this->attributes['password'] = bcrypt($password);
     }
 }

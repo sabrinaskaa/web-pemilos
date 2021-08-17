@@ -29,6 +29,9 @@ Route::group(['middleware' => ['auth']], function(){
         Route::get('/hasil',[AdminController::class, 'hasil'])->name('admin.hasil');
         // Route::get('/admin/daftar-siswa',[AdminController::class, 'daftar'])->name('admin.daftar');
         Route::resource('daftar', UserController::class);
+        Route::get('import-siswa', [AdminController::class, 'importExportView'])->name('importExportView');
+        Route::get('export-siswa', [AdminController::class, 'export'])->name('export');
+        Route::post('importSiswa', [AdminController::class, 'importSiswa'])->name('import.siswa');
     });
     Route::group(['middleware'=> ['cek_login:voter']], function(){
         Route::get('/voting', [VotingController::class, 'voting'])->name('voter');

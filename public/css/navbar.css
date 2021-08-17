@@ -96,7 +96,7 @@ nav ul {
 .btn-hasil-kiri{
   margin-top: 1rem;
   height: 2.75rem;
-  width: 11rem;
+  width: 1rem;
   background-color: #ecf0f3;
   color: var(--gray-dark);
   box-shadow: 5px 5px 5px #d1d9e6, -7.5px -7.5px 7.5px #f9f9f9;
@@ -174,7 +174,7 @@ nav ul {
 .btn-hasil-kanan-daftar{
   margin-top: 1rem;
   height: 2.75rem;
-  width: 2.5rem;
+  width: 2rem;
   background-color: #ecf0f3;
   color: var(--gray-dark);
   box-shadow: 5px 5px 5px #d1d9e6, 0 -7.5px 7.5px #f9f9f9;
