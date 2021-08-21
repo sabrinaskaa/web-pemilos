@@ -2,7 +2,7 @@
 @section('template-admin')
 
     <main class="main-admin">
-        <div class="content-wrapper">
+        <div class="content-wrapper wrapper-daftar">
 
             <section class="content-header">
                 <div id="main-search" class="d-flex flex-column align-items-center justify-content-center main-search">
