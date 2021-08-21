@@ -704,8 +704,8 @@
   }
 
   @media screen and (max-width: 759.5px){
-    .card-row{
-      margin-top: 3rem;
+    .card-row-admin{
+      margin-top: 7rem;
     }
   }
 
@@ -720,6 +720,12 @@
   @media screen and (max-width: 950px){
     .box-body{
       width: 40rem;
+    }
+  }
+
+  @media screen and (max-width: 759.5px){
+    .wrapper-daftar{
+      margin-top: 6rem;
     }
   }
 
@@ -750,3 +756,34 @@
       width: 12rem;
     }
   }
+
+  /* ==========   RESPONSIVE INPUT SECTION  ========== */
+  @media screen and (max-width: 760px) {
+    .input-content{
+      margin-top: 6rem !important;
+    }
+  }
+
+  @media screen and (max-width: 591px) {
+    .btn-row{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-import, .btn-export{
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 1.15px;
+    }
+    
+    .btn-export{
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  
