@@ -10,7 +10,7 @@
 @extends('admin.template')
 @section('template-admin')
 <main class="main-admin">
-    <div class="card-row">
+    <div class="card-row card-row-admin">
         @foreach ($candidates as $candidate)
         <div class="card card-1">
             
