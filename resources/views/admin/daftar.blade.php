@@ -27,9 +27,10 @@
                                         <th class="table-header" scope="col">NIS</th>
                                         <th class="table-header" scope="col">Nama</th>
                                         <th class="table-header" scope="col">Kelas</th>
-                                        <th class="table-header" scope="col">Status Vote</th>
                                         <th class="table-header" scope="col">Memilih</th>
-                                        <th class="table-header" scope="col">Action</th>
+                                        <th class="table-header" scope="col">Status Vote</th>
+                                        
+                                        <th class="table-header" scope="col">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -40,13 +41,26 @@
                                                 <td class="table-row">{{ $d->nis }}</td>
                                                 <td class="table-row">{{ $d->nama }}</td>
                                                 <td class="table-row">{{ $d->kelas }}</td>
-                                                <td class="table-row">{{ $d->status }}</td>
-                                                <td class="table-row">{{ $d->candidate_id }}</td>
+                                                <td class="table-row">
+                                                    @if ($d->candidate_id == true)
+                                                        <button type="button" class="btn-info btn-sm" disabled>{{ $d->candidate_id }}</button>
+                                                    @else
+                                                        <button type="button" class="btn-warning btn-sm" disabled>Belum</button>
+                                                    @endif
+                                                </td>
+                                                <td class="table-row">
+                                                    @if ($d->status == "sudah")
+                                                    <button type="submit" class="btn-success btn-sm" disabled> Sudah </button>
+                                                    @else
+                                                    <button type="submit" class="btn-warning btn-sm" disabled> Belum </button>
+                                                    @endif
+                                                </td>
+                                                
                                                 <td class="table-row">
                                                     <form action="{{ route('daftar.destroy', $d->id) }}" method="POST">
                                                         @csrf
                                                         @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus user ini?')">Delete</button>
+                                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus siswa ini?')">☠️</button>
                                                     </form>
                                                 </td>
                                         </tr>

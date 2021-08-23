@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'password' => '123456',
         ]);
      
- 
+
         Candidate::create([
             "slug"=>"visi-misi-paslon-1",
             "ketua"=>"apsn",
