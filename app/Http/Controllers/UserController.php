@@ -14,7 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {   
-        $daftar = User::orderBy('id')->skip(1)->take(1000);
+        $daftar = User::orderBy('id');
             
         if(request('search')){
             $daftar->where('nis', 'like', '%' . request('search'). '%')
