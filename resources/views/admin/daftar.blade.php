@@ -8,7 +8,7 @@
                 <div id="main-search" class="d-flex flex-column align-items-center justify-content-center main-search">
                     <form action="/daftar" method="get">
                         <div id="content-search">
-                            <input type="text" name="search" placeholder="Search"  class="type-box">
+                            <input type="text" name="search" placeholder="Search for anything"  class="type-box">
                             <button class="search-box" type="submit" value="search">Search</button>
                         </div>
                     </form>
@@ -37,7 +37,7 @@
                                         @foreach ($daftar as $d)
                                         <tr>
 
-                                                <td class="table-row">{{  ++$i }}</td>
+                                                <td class="table-row">{{  $d->id }}</td>
                                                 <td class="table-row">{{ $d->nis }}</td>
                                                 <td class="table-row">{{ $d->nama }}</td>
                                                 <td class="table-row">{{ $d->kelas }}</td>

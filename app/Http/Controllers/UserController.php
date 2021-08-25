@@ -13,8 +13,8 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $daftar = User::latest();
+    {   
+        $daftar = User::orderBy('id')->skip(1)->take(1000);
             
         if(request('search')){
             $daftar->where('nis', 'like', '%' . request('search'). '%')
@@ -27,9 +27,9 @@ class UserController extends Controller
             "title" => "DAFTAR SISWA",
             "active" => "daftar",
             "name" => "DAFTAR SISWA",
-            "daftar" => $daftar->paginate(5)->withQueryString(),
+            "daftar" => $daftar->paginate(10),
             
-        ])->with('i', (request()->input('page', 1) - 1) * 5);
+        ]);
         
     }
 

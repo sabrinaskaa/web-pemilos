@@ -25,8 +25,10 @@ class AdminController extends Controller
     }
 
     public function importExportView(){
-        $siswa = User::all();
+        $siswa = User::skip(1)->take(2000)->orderBy('id')->get();
         return view('admin.import',[
+            "active" => "import",
+            "name" => "IMPORT SISWA",
             "daftar" => $siswa
         ]);
         

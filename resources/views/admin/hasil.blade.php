@@ -17,13 +17,18 @@
             <img class="card-image" src="{{ asset('assets/img/'. $candidate->foto) }}">
             
             <div class="card-section-hasil">
+                
                 <p class="card-kandidat">KANDIDAT {{ $candidate->id }}</p>
                 
                 <h1 class="presentase">{{ number_format($candidate->user->count()/$jumlah * 100) }}%</h1>
+               
+                {{-- {{ $candidate->user->count() }} suara --}}
             </div>
         </div>
+        
         @endforeach
     </div>
+    
 </main>
 @endsection
 @endif

@@ -30,15 +30,15 @@
         <nav class="d-flex flex-column align-items-center justify-content-center nav bd-container nav-visi-misi">
             <div class="custom-select-wrapper">
                 <div class="header-content">
-                    <div class="title-daftar"><span>HASIL VOTING</span></div>
+                    <div class="title-daftar"><span>ADMIN PANELS</span></div>
                     <div class="btn-group btn-group-daftar">
                         <button type="button" class="btn-hasil-kiri-daftar">{{ $name }}</button>
                         <button type="button" class="btn-hasil-kanan-daftar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item {{ $active === 'hasil' ? 'active' : ''}}" href="{{ route('admin.hasil') }}">HASIL SUARA</a>
+                            <a class="dropdown-item {{ $active === 'hasil' ? 'active' : ''}}" href="{{ route('admin.hasil') }}">HASIL VOTING</a>
                             <a class="dropdown-item {{ $active === 'daftar' ? 'active' : ''}}" href="{{ route('daftar.index') }}">DAFTAR SISWA</a>
-                            <a class="dropdown-item {{ $active === 'import' ? 'active' : ''}}" href="{{ route('importExportView') }}">IMPORT DATA SISWA</a>
+                            <a class="dropdown-item {{ $active === 'import' ? 'active' : ''}}" href="{{ route('importExportView') }}">IMPORT SISWA</a>
                         </div>
                     </div>
                 </div>
