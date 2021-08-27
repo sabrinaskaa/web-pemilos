@@ -415,12 +415,18 @@
     margin-bottom: 4rem;
   }
 
+  .card-hasil{
+    position: relative;
+    height: 500px;
+  }
+
   .card-section-hasil{
     position: absolute;
     width: 100%;
     bottom: 0;
     box-sizing: border-box;
-    padding: 0 15px 50px;
+    margin-left: 15px;
+    margin-bottom: 10px;
   }
 
   .card-kandidat{
@@ -442,6 +448,42 @@
     margin-top: 1rem;
     margin-left: 3.75rem;
     color: var(--gray-dark);
+  }
+
+  .fa-caret-down{
+    margin-left: 11rem;
+    font-size: 25px;
+    margin-top: 1rem;
+    color: var(--info);
+    cursor: pointer;
+  }
+
+  .fa-caret-down:hover{
+    color: var(--purple);
+  }
+
+  .down__card{
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .down-card-text{
+    display: none;
+  }
+
+  .text-show{
+    opacity: 1;
+    margin-top: 3rem;
+  }
+
+  .text{
+    margin-left: 3.8rem;
+    display: block;
+    font-family: var(--third-body-font);
+  }
+
+  .number-vote{
+    color: var(--danger);
   }
 
   /* ==========   DAFTAR SISWA SECTION   ========== */
