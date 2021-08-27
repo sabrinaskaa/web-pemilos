@@ -659,8 +659,13 @@
   /* ==========   RESPONSIVE ADMIN SECTION  ========== */
 
   @media screen and (max-width: 950px){
+    .card-hasil{
+      height: 450px;
+    }
+
     .card-section-hasil{
-      padding: 0 15px 45px;
+      margin-left: 10px;
+      margin-bottom: 5px;
     }
 
     .card-kandidat{
@@ -671,11 +676,26 @@
     .presentase{
       margin-left: 3rem;
     }
+
+    .fa-caret-down{
+      margin-left: 10rem;
+      margin-top: .75rem;
+    }
   }
 
   @media screen and (max-width: 785px){
+    .card-hasil{
+      height: 450px;
+    }
+
+    .fa-caret-down{
+      margin-left: 9rem;
+      margin-top: .5rem;
+    }
+
     .card-section-hasil{
-      padding: 0 15px 45px;
+      margin-left: 15px;
+      margin-bottom: 5px;
     }
 
     .card-kandidat{
@@ -689,8 +709,18 @@
   }
 
   @media screen and (max-width: 290px){
+    .card-hasil{
+      height: 450px;
+    }
+
+    .fa-caret-down{
+      margin-left: 9rem;
+      margin-top: .5rem;
+    }
+
     .card-section-hasil{
-      padding: 0 15px 55px;
+      margin-left: 13px;
+      margin-bottom: 5px;
     }
 
     .card-kandidat{
