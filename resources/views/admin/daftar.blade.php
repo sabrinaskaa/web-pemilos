@@ -68,7 +68,7 @@
                                 </tbody>
                             </table>
                             <div class="d-flex justify-content-end">
-                                {!! $daftar->links() !!}
+                               {{ $daftar->links() }}
                             </div>
                         </div>
                     </div>

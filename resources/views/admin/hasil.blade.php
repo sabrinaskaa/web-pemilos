@@ -12,7 +12,7 @@
 <main class="main-admin">
     <div class="card-row card-row-admin">
         @foreach ($candidates as $candidate)
-        <div class="card" id="card">
+        <div class="card" id="card{{ $candidate->id }}">
             
             <img class="card-image" src="{{ asset('assets/img/'. $candidate->foto) }}">
             
@@ -24,14 +24,16 @@
                
                 {{-- {{ $candidate->user->count() }} suara --}}
 
-                <div class="down__card" id="down-text">
-                    <div class="down-card-text" id="text">
-                        <span class="number-vote">231 </span>
-                        VOTING
+                <div class="down__card" id="down-text{{ $candidate->id }}">
+                    <div class="down-card-text" id="text{{ $candidate->id }}">
+                        <span class="number-vote">{{ $candidate->user->count() }}</span>
+                        SUARA
                     </div>
                 </div>
 
-                <span class="link-dropdown-icon" id="down-icon"><i class="fas fa-caret-down" id="down-icon"></i></span>
+                <span class="link-dropdown-icon" id="down-icon{{ $candidate->id }}">
+                    <i class="fas fa-caret-down" id="down-icon{{ $candidate->id }}"></i>
+                </span>
 
             </div>
 
@@ -41,42 +43,48 @@
     </div>
 
     <script>
-        const showDownCard = (iconId,cardId) =>{
-            const icon = document.getElementById(iconId),
-            card = document.getElementById(cardId)
 
-            if(icon && card){
-                icon.addEventListener('click', ()=>{
-                    card.classList.toggle('card-hasil')
-                })
+            let showDownCard = (iconId,cardId) => {
+
+                const icon = document.getElementById(iconId),
+                card = document.getElementById(cardId)
+
+                if(icon && card){
+                    icon.addEventListener('click', ()=>{
+                        card.classList.toggle('card-hasil')
+                        })
+                    }
             }
-        }
 
-        showDownCard('down-icon','card')
+            let showDownText = (iconId,textId) => {
 
-        const showDownText = (iconId,textId) =>{
-            const icon = document.getElementById(iconId),
-            text = document.getElementById(textId)
+                const icon = document.getElementById(iconId),
+                text = document.getElementById(textId)
 
-            if(icon && text){
-                icon.addEventListener('click', ()=>{
-                    text.classList.toggle('text-show')
-                })
+                if(icon && text){
+                    icon.addEventListener('click', ()=>{
+                        text.classList.toggle('text-show')
+                    })
+                }
             }
-        }
-        showDownText('down-icon','down-text')
 
-        const showText = (iconId,showId) =>{
-            const icon = document.getElementById(iconId),
-            show = document.getElementById(showId)
+            let showText = (iconId,showId) => {
+                const icon = document.getElementById(iconId),
+                show = document.getElementById(showId)
 
-            if(icon && show){
-                icon.addEventListener('click', ()=>{
-                    show.classList.toggle('text')
-                })
+                if(icon && show){
+                    icon.addEventListener('click', ()=>{
+                        show.classList.toggle('text')
+                    })
+                }
             }
-        }
-        showText('down-icon','text')
+
+            for(let i=1; i < 4; ++i){
+                showDownCard('down-icon'+i,'card'+i)
+                showDownText('down-icon'+i,'down-text'+i)
+                showText('down-icon'+i,'text'+i)
+            }
+            
     </script>
     
 </main>

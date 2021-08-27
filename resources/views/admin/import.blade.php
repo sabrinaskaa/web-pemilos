@@ -31,7 +31,7 @@
                         <div class="d-block container btn-container">
                             <div class="btn-row">
                                 <div class="row-left">
-                                    <button type="button" class="btn btn-primary btn-import" data-toggle="modal" data-target="#importExcel">IMPORT EXCEL</button>
+                                    <button type="button" class="btn btn-primary btn-import" data-toggle="modal" data-target="#importExcel">IMPORT SISWA</button>
                                 </div>
                                 
                                 <!-- Import Excel -->
@@ -63,9 +63,10 @@
 
                                 <div class="row-left">
                                     <a href="{{ route('export') }}" target="_blank">
-                                        <button type="button" class="btn btn-success btn-export">EXPORT EXCEL</button>
+                                        <button type="button" class="btn btn-success btn-export">EXPORT SISWA</button>
                                     </a>
                                 </div>
+                                <button type="button" class="btn btn-success btn-export" onclick="MyF()">asdasdS</button>
                             </div>
                         </div>
 
@@ -80,11 +81,11 @@
                                         <th class="table-header" scope="col">Kelas</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="import">
                                     @php $i=1 @endphp
 				                    @foreach($daftar as $d)
-                                    <tr>
-                                        <td class="table-row">{{ $i++ }}</td>
+                                    <tr >
+                                        <td class="table-row">{{$d->id }}</td>
                                         <td class="table-row">{{$d->nis}}</td>
                                         <td class="table-row">{{$d->nama}}</td>
                                         <td class="table-row">{{$d->kelas}}</td>
@@ -92,15 +93,27 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            <div class="d-flex justify-content-end">
-                                
-                            </div>
+                            {{ $daftar->links() }}
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
+
+    <script>
+        
+        function MyF(){
+            const tampil = document.querySelector('#import')
+            // tampil.innerHTML = ' @php $i=1 @endphp @foreach($daftar as $d)  <tr><td class="table-row">{{ $i++ }}</td><td class="table-row">{{$d->nis}}</td><td class="table-row">{{$d->nama}}</td><td class="table-row">{{$d->kelas}}</td></tr>@endforeach'
+            const restart = setTimeout(() => location.reload(), 10000);  
+    
+            if (restart){
+                tampil.innerHTML = 'asd'
+            } 
+        }
+
+    </script>
 </body>
 @endsection
 

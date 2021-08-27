@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class UserController extends Controller
 {
@@ -12,9 +14,11 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {   
-        $daftar = User::orderBy('id')->skip(1)->take(1000);
+        
+        $daftar = User::orderBy('id');
             
         if(request('search')){
             $daftar->where('nis', 'like', '%' . request('search'). '%')
@@ -28,7 +32,6 @@ class UserController extends Controller
             "active" => "daftar",
             "name" => "DAFTAR SISWA",
             "daftar" => $daftar->paginate(10),
-            
         ]);
         
     }

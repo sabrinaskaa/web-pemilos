@@ -417,7 +417,7 @@
 
   .card-hasil{
     position: relative;
-    height: 500px;
+    height: 490px;
   }
 
   .card-section-hasil{
@@ -464,7 +464,7 @@
 
   .down__card{
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.5s;
   }
 
   .down-card-text{
@@ -477,7 +477,7 @@
   }
 
   .text{
-    margin-left: 3.8rem;
+    margin-left: 4rem;
     display: block;
     font-family: var(--third-body-font);
   }
