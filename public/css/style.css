@@ -417,7 +417,7 @@
 
   .card-hasil{
     position: relative;
-    height: 490px;
+    height: 500px;
   }
 
   .card-section-hasil{
@@ -464,7 +464,7 @@
 
   .down__card{
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 
   .down-card-text{
@@ -477,7 +477,7 @@
   }
 
   .text{
-    margin-left: 4rem;
+    margin-left: 3.8rem;
     display: block;
     font-family: var(--third-body-font);
   }
@@ -487,6 +487,9 @@
   }
 
   /* ==========   DAFTAR SISWA SECTION   ========== */
+  .wrapper-daftar{
+    margin-top: 8rem;
+  }
 
   .type-box{
     height: 40px;
@@ -563,7 +566,7 @@
   
   /* ==========   INPUTAN SISWA SECTION   ========== */
   .input-content{
-    margin-top: 3rem;
+    margin-top: 8rem;
   }
 
   .alert-card{
@@ -642,3 +645,7 @@
     }
   }
 
+
+  .card-row-admin{
+    margin-top: 6rem;
+  }
