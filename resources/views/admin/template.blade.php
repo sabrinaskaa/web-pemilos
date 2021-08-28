@@ -26,24 +26,22 @@
     <title>Pemilihan Ketua Osis</title>
 </head>
 <body>
-    <header class="l-header scroll-header" id="header">
-        <nav class="d-flex flex-column align-items-center justify-content-center nav bd-container nav-visi-misi">
-            <div class="custom-select-wrapper">
-                <div class="header-content">
-                    <div class="title-daftar"><span>ADMIN PANELS</span></div>
-                    <div class="btn-group btn-group-daftar">
-                        <button type="button" class="btn-hasil-kiri-daftar">{{ $name }}</button>
-                        <button type="button" class="btn-hasil-kanan-daftar dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item {{ $active === 'hasil' ? 'active' : ''}}" href="{{ route('admin.hasil') }}">HASIL VOTING</a>
-                            <a class="dropdown-item {{ $active === 'daftar' ? 'active' : ''}}" href="{{ route('daftar.index') }}">DAFTAR SISWA</a>
-                            <a class="dropdown-item {{ $active === 'import' ? 'active' : ''}}" href="{{ route('importExportView') }}">IMPORT SISWA</a>
-                        </div>
-                    </div>
-                </div>
+<header class="l-header scroll-header header-admin" id="header-admin">
+        <nav class="d-flex nav bd-container nav-admin">
+            <a href="#" class="link-title title-daftar">ADMIN PANELS</a>
+            <div class="nav__toggle not-active" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav> 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item" id="nav-home"><a href="{{ route('admin.hasil') }}" id="link-home" class="nav__link">HASIL VOTING</a></li>
+                    <li class="nav__item" id="nav-about"><a href="{{ route('daftar.index') }}" id="link-about" class="nav__link">DAFTAR SISWA</a></li>
+                    <li class="nav__item" id="nav-about"><a href="{{ route('importExportView') }}" id="link-about" class="nav__link">IMPORT SISWA</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     @yield('template-admin')
