@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Candidate;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-
 
 class UserController extends Controller
 {
@@ -26,6 +25,7 @@ class UserController extends Controller
                    ->orWhere('kelas','like','%'.request('search').'%')
                    ->orWhere('status','like','%'.request('search').'%')
                    ->orWhere('candidate_id','like','%'.request('search').'%');
+                   
         }
         return view('admin.daftar',[
             "title" => "DAFTAR SISWA",

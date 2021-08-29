@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-
-    <link href="css/mainstyle.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive-style.css" rel="stylesheet" type="text/css" />
-
-    <title>Pemilihan Ketua Osis</title>
-</head>
+@extends('layout.main')
+@section('container')
 <body>
 
     @if (Auth::user()->status == "belum")
@@ -73,9 +55,15 @@
             </div>
         </div>
     @else
-    <div class="text-center">
-    </div>
-    <h1 class="mt-5 text-center">You've Already Chosen</h1>        
+    <section class="form_section pt-5">
+        <div class="container a-container d-flex align-items-center">
+            <div class="form d-flex flex-column">
+                <h1 class="text-md-center text-uppercase font-weight-bold">you've already chosen</h1>    
+            </div>
+        </div>
+    </section>
     @endif
 
 </body>
+@endsection
+

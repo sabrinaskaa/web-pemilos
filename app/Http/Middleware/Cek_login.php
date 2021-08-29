@@ -28,6 +28,6 @@ class Cek_login
             return $next($request);
         } 
 
-       return redirect('/login')->with('error', 'You dont have permission pls go back');
+       return redirect('/login')->with('error', 'You dont have this permission pls go back, fucc u');
     }
 }
