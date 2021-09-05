@@ -10,35 +10,25 @@
 @extends('admin.template')
 @section('template-admin')
 <main class="main-admin">
+    
     <div class="card-row card-row-admin">
         @foreach ($candidates as $candidate)
         <div class="card mt-5" id="card{{ $candidate->id }}">
-            
             <img class="card-image" src="{{ asset('assets/img/'. $candidate->foto) }}">
-            
             <div class="card-section-hasil">
-                
                 <p class="card-kandidat">KANDIDAT {{ $candidate->id }}</p>
-                
                 <h1 class="presentase">{{ number_format($candidate->user->count()/$jumlah * 100) }}%</h1>
-               
-                {{-- {{ $candidate->user->count() }} suara --}}
-
                 <div class="down__card" id="down-text{{ $candidate->id }}">
                     <div class="down-card-text" id="text{{ $candidate->id }}">
                         <span class="number-vote"><strong>{{ $candidate->user->count() }}</strong></span>
                         SUARA
                     </div>
                 </div>
-
                 <span class="link-dropdown-icon" id="down-icon{{ $candidate->id }}">
                     <i class="fas fa-caret-down" id="down-icon{{ $candidate->id }}"></i>
                 </span>
-
             </div>
-
         </div>
-        
         @endforeach
     </div>
 

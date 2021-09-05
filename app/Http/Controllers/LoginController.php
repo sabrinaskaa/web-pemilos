@@ -21,26 +21,18 @@ class LoginController extends Controller
 
             if (Auth::attempt($credent)){
                 $user = Auth::user();
-
+                
                 if ($user->roles == 'admin'){
                     return redirect()->intended('/hasil');
                 } elseif ($user->roles == 'voter'){
                     return redirect()->intended('voting');
                 }
+                $request->session()->regenerate();
+                
                 return redirect()->intended('/login');
             }
-        return redirect('/');
+        return back()->withErrors([
+            'nis' => 'NICE TRY LUR'
+        ]);
     }
-    // public function login(){
-    //     return view('login', [
-    //         "title" => "Pemilihan Ketua Osis",
-    //     ]);
-    // }
-
-    // public function postlogin(Request $request){
-    //     if (Auth::attempt($request->only('nis','password'))){
-    //         return redirect('/voting');
-    //     }
-    //     return redirect('/');
-    // }
 }

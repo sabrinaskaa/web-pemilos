@@ -37,10 +37,9 @@
     box-shadow: 10px 10px 10px #d1d9e6, -10px -10px 10px #f9f9f9;
     border-radius: 20px;
   }
-
   .form_input{
     width: 325px;
-    height: 40px;
+    height: 45px;
     margin: 4px 1.5rem;
     padding-left: 25px;
     font-size: 13px;
@@ -62,7 +61,7 @@
     font-size: var(--biggest-font-size);
     line-height: 1.5;
     font-weight: 700;
-    padding-left: 6.75rem;
+    padding-left: 7rem;
     color: var(--second-color);
   }
 
@@ -483,7 +482,7 @@
   }
 
   .number-vote{
-    color: var(--gray-dark);
+    color: var(--danger);
   }
 
   /* ==========   DAFTAR SISWA SECTION   ========== */

@@ -1,30 +1,26 @@
 @extends('layout.main')
 @section('container')
-<body>
-
     @if (Auth::user()->status == "belum")
+
         <nav class="nav-visi-misi bd-container ml-3">
             <div class="justify-content-between">
-                <a href="/voting" class="nav-back text-decoration-none"">
+                <a href="/voting" class="nav-back text-decoration-none">
                     <i class="fas fa-chevron-left nav-back"></i>
                 </a>
-                <a href="/voting" class="ml-0 nav-back text-decoration-none"">
+                <a href="/voting" class="ml-0 nav-back text-decoration-none">
                     Kembali
                 </a>
             <div>
         </nav> 
 
-        <div class="d-flex align-items-center justify-content-center">
-            <h2 class="nav_title_2">PEMILIHAN CAKETOS</h2>
-        </div>
+        @include('partial.nav')
 
         <div class="visi-misi-row d-flex align-items-center mb-5">
         
             <div class="visi-misi-card left-card">
-                
                 <img src="assets/img/{{ $visimisi->foto }}" alt="" class="left-side">
-                
             </div>
+
             <div class="visi-misi-card right-card">
                 <div class="right-side">
 
@@ -63,7 +59,5 @@
         </div>
     </section>
     @endif
-
-</body>
 @endsection
 

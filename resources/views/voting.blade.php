@@ -1,21 +1,7 @@
 @extends('layout.main')
 @section('container')
     @if (Auth::user()->status == "belum")
-    @include('partial.nav')
-    <body>         
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                </div>
-            </div>
-        </div>
-
-        
+        @include('partial.nav')
         <div class="card-row d-flex align-items-center">
             @foreach ($voting as $v)
             <div class="card card-1">
@@ -45,8 +31,6 @@
     @endif
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  </body>
 
 @endsection
 
