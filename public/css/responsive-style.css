@@ -1,789 +1,849 @@
  /* ==========   RESPONSIVE MAIN SECTION  ========== */
 
  @media screen and (max-width: 768px) {
-    main {
-        margin-top: 3rem;
-    }
+  main {
+      margin-top: 3rem;
+  }
 
-    .form{
-      padding: 1.25rem 3.25rem 2rem 3.25rem;
+  .form{
+    padding: 1.25rem 3.25rem 2rem 3.25rem;
+  }
+
+  .title{
+      padding-left: 5.5rem;
+  }
+
+  .sub-title{
+      padding-bottom: 1.75rem;
+      padding-left: 8.5rem;
+  }
+  .form_input{
+    width: 295px;
+    height: 37px;
+    padding-left: 23px;
+  }
+
+  .button{
+    width: 160px;
+    height: 47px;
+    margin-top: 1.25rem;
+    margin-left: 6.25rem;
+  }
+
+  .error{
+    padding-left: 1.75rem;
+    margin-top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 550px){
+  main {
+      margin-top: 6rem;
+  }
+
+  .form{
+      padding: 1rem 3rem 1.75rem 3rem;
     }
 
     .title{
         padding-left: 5.5rem;
+        line-height: 1.75;
     }
 
     .sub-title{
-        padding-bottom: 1.75rem;
+        padding-bottom: 1.5rem;
         padding-left: 8.5rem;
     }
+    
     .form_input{
-      width: 295px;
+      width: 280px;
       height: 37px;
       padding-left: 23px;
     }
   
     .button{
-      width: 160px;
+      width: 150px;
       height: 47px;
-      margin-top: 1.25rem;
-      margin-left: 6.25rem;
+      margin-top: 1rem;
+      margin-left: 5.5rem;
     }
 
     .error{
-      padding-left: 1.75rem;
-      margin-top: 1.25rem;
+      padding-left: 1.5rem;
+      margin-top: 1.15rem;
     }
-  }
+}
 
-  @media screen and (max-width: 550px){
-    main {
-        margin-top: 6rem;
-    }
-
-    .form{
-        padding: 1rem 3rem 1.75rem 3rem;
-      }
-
-      .title{
-          padding-left: 5.5rem;
-          line-height: 1.75;
-      }
-  
-      .sub-title{
-          padding-bottom: 1.5rem;
-          padding-left: 8.5rem;
-      }
-      
-      .form_input{
-        width: 280px;
-        height: 37px;
-        padding-left: 23px;
-      }
-    
-      .button{
-        width: 150px;
-        height: 47px;
-        margin-top: 1rem;
-        margin-left: 5.5rem;
-      }
-
-      .error{
-        padding-left: 1.5rem;
-        margin-top: 1.15rem;
-      }
-  }
-
-  @media screen and (max-width: 480px){
-    main {
-        margin-top: 6.5rem;
-    }
-
-    .form{
-        padding: .5rem 2rem 1.75rem 2rem;
-      }
-
-      .title{
-        padding-left: 2.75rem;
-        line-height: 1.75;
-    }
-
-    .sub-title{
-        padding-bottom: 1.5rem;
-        padding-left: 5.75rem;
-    }
-
-      .form_input{
-        width: 190px;
-        height: 37px;
-        padding-left: 23px;
-      }
-    
-      .button{
-        width: 140px;
-        height: 40px;
-        margin-top: 1rem;
-        margin-left: 3rem;
-      }
-
-      .error{
-        padding-left: 1.5rem;
-        margin-top: 1.15rem;
-        font-size: 9px;
-      }
-  }
-
-  @media screen and (max-width: 360px){
-    main{
-      margin-top: 7rem;
-    }
-
-    .form{
-        padding: .25rem 1.25rem 1.25rem 1.25rem;
-      }
-
-    .title{
-        padding-left: 2.75rem;
-        line-height: 1.75;
-    }
-
-    .sub-title{
-        padding-bottom: 1.5rem;
-        padding-left: 5.75rem;
-    }
-
-      .form_input{
-        width: 190px;
-        height: 37px;
-        padding-left: 23px;
-      }
-    
-      .button{
-        width: 130px;
-        height: 40px;
-        margin-top: .75rem;
-        margin-left: 3.25rem;
-      }
-
-      .error{
-        padding-left: 1.5rem;
-        margin-top: 1.15rem;
-        font-size: 9px;
-      }
-  }
-
-  @media screen and (max-width: 330px){
-    main{
-      margin-top: 7rem;
-    }
-
-    .form{
-        padding: 0rem 0rem 0rem 0rem;
-      }
-
-    .title{
-        font-size: 1.75rem;
-        padding-left: 3.75rem;
-        padding-top: .5rem;
-        line-height: 1.75;
-    }
-
-    .sub-title{
-        padding-bottom: 1.5rem;
-        padding-left: 5.65rem;
-    }
-
-      .form_input{
-        width: 190px;
-        height: 35px;
-        padding-left: 23px;
-      }
-    
-      .button{
-        width: 120px;
-        height: 40px;
-        margin-top: .75rem;
-        margin-left: 3.75rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .error{
-        padding-left: 1.5rem;
-        margin-top: 1.15rem;
-        font-size: 9px;
-      }
-  }
-
-  /* ==========   RESPONSIVE VOTE SECTION  ========== */
-  @media screen and (max-width: 950px){
-    .card{
-      height: 365px;
-      width: 210px;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
-    }
-    
-    .card-image{
-      height: 210px;
-      width: 197px;
-      margin: .4rem;
-    }
-
-    .card-text{
-      margin-left: 2.25rem;
-    }
-
-    .visi-misi_button, .vote_button{
-      width: 140px;
-      height: 34px;
-      margin-left: 1rem;
-    }
-  }
-
-  @media screen and (max-width: 785px){
-    .card-row{
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-
-    .card{
-      height: 415px;
-      width: 260px;
-      margin-bottom: 4rem;
-    }
-
-    .card-image{
-      height: 260px;
-      width: 247px;
-      margin: .4rem;
-    }
-
-    .card-text{
-      margin-left: 4rem;
-    }
-
-    .visi-misi_button, .vote_button{
-      width: 170px;
-      height: 40px;
-      margin-left: 1.65rem;
-    }
-  }
-
-  @media screen and (max-width: 785px){
-    .card{
-      height: 360px;
-      width: 200px;
-      margin-bottom: 4rem;
-    }
-
-    .card-image{
-      height: 205px;
-      width: 187px;
-      margin: .4rem;
-    }
-
-    .card-text{
-      margin-left: 2rem;
-    }
-
-    .visi-misi_button, .vote_button{
-      font-size: 12px;
-      width: 110px;
-      height: 40px;
-      margin-left: 1.65rem;
-    }
-  }
-
-  @media screen and (max-width: 759.5px){
-    .card-row{
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-    }
-    .card-section {
-      position: absolute;
-      width: 100%;
-      bottom: 0;
-      box-sizing: border-box;
-      padding: 0 18px 3px;
-    }
-  }
-
-  @media screen and (max-width: 550.5px){
-    .card-row {
-      margin-top: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 480.5px){
-    .card-row{
-      margin-top: 2rem;
-    }
-  }
-
-   /* ==========   RESPONSIVE VISI-MISI SECTION  ========== */
-  @media screen and (max-width: 768px){
-    .left-card{
-      height: 300px;
-      width: 270px;
-    }
-
-    .right-card{
-      height: 300px;
-      width: 350px;
-    }
-
-    .left-side{
-      width: 270px;
-      height: 302px;
-    }
-
-    .right-side{
-      font-size: 13.5px;
-      width: 320px;
-      height: 250px;
-    }
-    .visi-title, .misi-title, .kandidat-title{
-      font-size: var(--h2-font-size);
-    }
-
-    .vote-button{
-      width: 150px;
-      height: 45px;
-      margin-left: 4.25rem;
-      font-size: 13px;
-      font-weight: 650;
-    }
-  }
-
-  @media screen and (max-width: 759.5px){
-    .visi-misi-row{
-      margin-top: 5rem;
-    }
-  }
-
-  @media screen and (max-width: 652px){
-    .visi-misi-row{
-      margin-top: 4rem;
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .left-card{
-      height: 250px;
-      width: 300px;
-      border-radius: 10px 10px 0 0;
-      box-shadow: 10px 10px 10px #d1d9e6, -15px -15px 15px #f9f9f9;
-    }
-
-    .right-card{
-      height: 300px;
-      width: 300px;
-      margin-bottom: 2rem;
-      border-radius: 0 0 10px 10px;
-      box-shadow: 10px 10px 10px #d1d9e6, -15px 6px 20px #f9f9f9;
-    }
-
-    .left-side{
-      width: 300px;
-      height: 250px;
-    }
-
-    .right-side{
-      font-size: 13.5px;
-      width: 270px;
-      height: 250px;
-      margin-top: .7rem;
-    }
-    .visi-title, .misi-title, .kandidat-title{
-      font-size: var(--h2-font-size);
-    }
-
-    .vote-button{
-      width: 150px;
-      height: 45px;
-      margin-left: 2.25rem;
-      font-size: 13px;
-      font-weight: 650;
-    }
-  }
-
-  @media screen and (max-width: 347px){
-    .left-card{
-      height: 220px;
-      width: 240px;
-      border-radius: 10px 10px 0 0;
-      box-shadow: 10px 10px 10px #d1d9e6, -15px -15px 15px #f9f9f9;
-    }
-
-    .right-card{
-      height: 300px;
-      width: 240px;
-      margin-bottom: 2rem;
-    }
-
-    .left-side{
-      width: 240px;
-      height: 220px;
-    }
-
-    .right-side{
-      font-size: 13.5px;
-      width: 210px;
-      height: 250px;
-      margin-top: .7rem;
-    }
-
-    .vote-button{
-      width: 120px;
-      height: 43px;
-      margin-left: 1.5rem;
-      font-size: 13px;
-      font-weight: 650;
-    }
-  }
-
-  /* ==========   RESPONSIVE SUBMIT SECTION  ========== */
-  @media screen and (max-width: 975px){
-    .success-card{
-      width: 40rem;
-      height: 7.5rem;
-    }
-
-    .fa-thumbs-up{
-      font-size: 28px;
-      margin-left: 1.5rem;
-      margin-top: 2.8rem;
-    }
-
-    .success-title{
-      margin-top: 2.8rem;
-    }
-
-    .success-text-row{
-      margin-top: 2rem;
-    }
-
-    .saran-text-row{
-      margin-top: .4rem;
-    }
-
-    .success-text-card{
-      width: 40rem;
-      padding-bottom: 1.25rem;
-    }
-
-    .saran-text-card{
-      width: 40rem;
-    }
-  }
-
-  @media screen and (max-width: 685px){
-    .success-card{
-      width: 20rem;
-      height: 4.5rem;
-    }
-
-    .fa-thumbs-up{
-      font-size: 22px;
-      margin-left: 1.5rem;
-      margin-top: 1.6rem;
-    }
-
-    .success-title{
-      margin-top: 2.8rem;
-      font-size: 22px;
-    }
-
-    .success-text-row{
-      margin-top: 1.5rem;
-    }
-
-    .saran-text-row{
-      margin-top: .3rem;
-    }
-
-    .success-text-card{
-      width: 20rem;
-      padding-bottom: 1rem;
-    }
-
-    .saran-text-card{
-      width: 20rem;
-    }
-  }
-
-  @media screen and (max-width: 360px){
-    .success-card{
-      width: 17rem;
-      height: 4.2rem;
-    }
-
-    .fa-thumbs-up{
-      font-size: 18px;
-      margin-left: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .success-title{
-      font-size: 18px;
-    }
-
-    .success-text-row{
-      margin-top: 1rem;
-    }
-
-    .saran-text-row{
-      margin-top: .3rem;
-    }
-
-    .success-text-card{
-      width: 17rem;
-      padding-bottom: 1rem;
-    }
-
-    .saran-text-card{
-      width: 17rem;
-    }
-
-    .text-success{
-      font-size: 16px;
-    }
-
-    .kritik-saran, .link-gform{
-      font-family: var(--font-theme);
-      font-size: 12px;
-      font-weight: 400;
-      color: var(--gray-dark);
-    }
-  }
-
-  @media screen and (max-width: 975px){
-    .success-card{
-      width: 40rem;
-      height: 7.5rem;
-    }
-
-    .fa-thumbs-up{
-      font-size: 28px;
-      margin-left: 1.5rem;
-      margin-top: 2.8rem;
-    }
-
-    .success-title{
-      margin-top: 2.8rem;
-    }
-
-    .success-text-row{
-      margin-top: 2rem;
-    }
-
-    .saran-text-row{
-      margin-top: .4rem;
-    }
-
-    .success-text-card{
-      width: 40rem;
-      padding-bottom: 1.25rem;
-    }
-
-    .saran-text-card{
-      width: 40rem;
-    }
-  }
-
-  @media screen and (max-width: 685px){
-    .success-card{
-      width: 20rem;
-      height: 4.5rem;
-    }
-
-    .fa-thumbs-up{
-      font-size: 22px;
-      margin-left: 1.5rem;
-      margin-top: 1.6rem;
-    }
-
-    .success-title{
-      margin-top: 2.8rem;
-      font-size: 22px;
-    }
-
-    .success-text-row{
-      margin-top: 1.5rem;
-    }
-
-    .saran-text-row{
-      margin-top: .3rem;
-    }
-
-    .success-text-card{
-      width: 20rem;
-      padding-bottom: 1rem;
-    }
-
-    .saran-text-card{
-      width: 20rem;
-    }
-  }
-
-  @media screen and (max-width: 320px){
-    .success-card{
-      width: 14rem;
-      height: 4rem;
-    }
-
-    .fa-thumbs-up{
-      font-size: 14px;
-      margin-left: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .success-title{
-      font-size: 14px;
-    }
-
-    .success-text-row{
-      margin-top: .7rem;
-    }
-
-    .saran-text-row{
-      margin-top: .3rem;
-    }
-
-    .success-text-card{
-      width: 14rem;
-      padding-bottom: 1rem;
-    }
-
-    .saran-text-card{
-      width: 14rem;
-    }
-
-    .text-success{
-      font-size: 14px;
-    }
-
-    .kritik-saran, .link-gform{
-      font-family: var(--font-theme);
-      font-size: 11px;
-      font-weight: 400;
-      color: var(--gray-dark);
-    }
-  }
-
-  /* ==========   RESPONSIVE ADMIN SECTION  ========== */
-
-  @media screen and (max-width: 950px){
-    .card-section-hasil{
-      padding: 0 15px 45px;
-    }
-
-    .card-kandidat{
-      margin-left: 2.5rem;
-      font-size: 15px;
-    }
-
-    .presentase{
-      margin-left: 3rem;
-    }
-  }
-
-  @media screen and (max-width: 785px){
-    .card-section-hasil{
-      padding: 0 15px 45px;
-    }
-
-    .card-kandidat{
-      margin-left: 2.1rem;
-      font-size: 15px;
-    }
-
-    .presentase{
-      margin-left: 2.7rem;
-    }
-  }
-
-  @media screen and (max-width: 290px){
-    .card-section-hasil{
-      padding: 0 15px 55px;
-    }
-
-    .card-kandidat{
-      margin-left: 2rem;
-      font-size: 15px;
-    }
-
-    .presentase{
-      margin-left: 3rem;
-    }
-  }
-
-  @media screen and (max-width: 759.5px){
-    .card-row-admin{
-      margin-top: 7rem;
-    }
-  }
-
-  @media screen and (max-width: 550.5px){
-    .main-admin{
+@media screen and (max-width: 480px){
+  main {
       margin-top: 6.5rem;
-      margin-bottom: 4rem;
-    }
   }
 
-  /* ==========   RESPONSIVE DAFTAR SISWA SECTION   ========== */
-  @media screen and (max-width: 950px){
-    .box-body{
-      width: 40rem;
+  .form{
+      padding: .5rem 2rem 1.75rem 2rem;
     }
+
+    .title{
+      padding-left: 2.75rem;
+      line-height: 1.75;
   }
 
-  @media screen and (max-width: 759.5px){
-    .wrapper-daftar{
-      margin-top: 6rem;
-    }
+  .sub-title{
+      padding-bottom: 1.5rem;
+      padding-left: 5.75rem;
   }
 
-  @media screen and (max-width: 735px){
-    .box-body{
-      width: 30rem;
+    .form_input{
+      width: 190px;
+      height: 37px;
+      padding-left: 23px;
     }
-  }
-
-  @media screen and (max-width: 590px){
-    .box-body{
-      width: 15rem;
-    }
-  }
-
-  @media screen and (max-width: 315px){
-    .type-box{
-      width: 150px;
-      height: 38px;
-      padding-left: 10px;
-    }
-
-    .search-box{
-      height: 38px;
-    }
-
-    .box-body{
-      width: 12rem;
-    }
-  }
-
-  /* ==========   RESPONSIVE INPUT SECTION  ========== */
-  @media screen and (max-width: 760px) {
-    .input-content{
-      margin-top: 6rem !important;
-    }
-  }
-
-  @media screen and (max-width: 591px) {
-    .btn-row{
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btn-import, .btn-export{
-      width: 150px;
+  
+    .button{
+      width: 140px;
       height: 40px;
-      border-radius: 5px;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: 1.15px;
-    }
-    
-    .btn-export{
-      margin-left: 0;
       margin-top: 1rem;
+      margin-left: 3rem;
     }
+
+    .error{
+      padding-left: 1.5rem;
+      margin-top: 1.15rem;
+      font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 360px){
+  main{
+    margin-top: 7rem;
+  }
+
+  .form{
+      padding: .25rem 1.25rem 1.25rem 1.25rem;
+    }
+
+  .title{
+      padding-left: 2.75rem;
+      line-height: 1.75;
+  }
+
+  .sub-title{
+      padding-bottom: 1.5rem;
+      padding-left: 5.75rem;
+  }
+
+    .form_input{
+      width: 190px;
+      height: 37px;
+      padding-left: 23px;
+    }
+  
+    .button{
+      width: 130px;
+      height: 40px;
+      margin-top: .75rem;
+      margin-left: 3.25rem;
+    }
+
+    .error{
+      padding-left: 1.5rem;
+      margin-top: 1.15rem;
+      font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 330px){
+  main{
+    margin-top: 7rem;
+  }
+
+  .form{
+      padding: 0rem 0rem 0rem 0rem;
+    }
+
+  .title{
+      font-size: 1.75rem;
+      padding-left: 3.75rem;
+      padding-top: .5rem;
+      line-height: 1.75;
+  }
+
+  .sub-title{
+      padding-bottom: 1.5rem;
+      padding-left: 5.65rem;
+  }
+
+    .form_input{
+      width: 190px;
+      height: 35px;
+      padding-left: 23px;
+    }
+  
+    .button{
+      width: 120px;
+      height: 40px;
+      margin-top: .75rem;
+      margin-left: 3.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .error{
+      padding-left: 1.5rem;
+      margin-top: 1.15rem;
+      font-size: 9px;
+    }
+}
+
+/* ==========   RESPONSIVE VOTE SECTION  ========== */
+@media screen and (max-width: 950px){
+  .card{
+    height: 365px;
+    width: 210px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   
+  .card-image{
+    height: 210px;
+    width: 197px;
+    margin: .4rem;
+  }
+
+  .card-text{
+    margin-left: 2.25rem;
+  }
+
+  .visi-misi_button, .vote_button{
+    width: 140px;
+    height: 34px;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 785px){
+  .card-row{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .card{
+    height: 415px;
+    width: 260px;
+    margin-bottom: 4rem;
+  }
+
+  .card-image{
+    height: 260px;
+    width: 247px;
+    margin: .4rem;
+  }
+
+  .card-text{
+    margin-left: 4rem;
+  }
+
+  .visi-misi_button, .vote_button{
+    width: 170px;
+    height: 40px;
+    margin-left: 1.65rem;
+  }
+}
+
+@media screen and (max-width: 785px){
+  .card{
+    height: 360px;
+    width: 200px;
+    margin-bottom: 4rem;
+  }
+
+  .card-image{
+    height: 205px;
+    width: 187px;
+    margin: .4rem;
+  }
+
+  .card-text{
+    margin-left: 2rem;
+  }
+
+  .visi-misi_button, .vote_button{
+    font-size: 12px;
+    width: 110px;
+    height: 40px;
+    margin-left: 1.65rem;
+  }
+}
+
+@media screen and (max-width: 759.5px){
+  .card-row{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .card-section {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0 18px 3px;
+  }
+}
+
+@media screen and (max-width: 550.5px){
+  .card-row {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480.5px){
+  .card-row{
+    margin-top: 2rem;
+  }
+}
+
+ /* ==========   RESPONSIVE VISI-MISI SECTION  ========== */
+@media screen and (max-width: 768px){
+  .left-card{
+    height: 300px;
+    width: 270px;
+  }
+
+  .right-card{
+    height: 300px;
+    width: 350px;
+  }
+
+  .left-side{
+    width: 270px;
+    height: 302px;
+  }
+
+  .right-side{
+    font-size: 13.5px;
+    width: 320px;
+    height: 250px;
+  }
+  .visi-title, .misi-title, .kandidat-title{
+    font-size: var(--h2-font-size);
+  }
+
+  .vote-button{
+    width: 150px;
+    height: 45px;
+    margin-left: 4.25rem;
+    font-size: 13px;
+    font-weight: 650;
+  }
+}
+
+@media screen and (max-width: 759.5px){
+  .visi-misi-row{
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 652px){
+  .visi-misi-row{
+    margin-top: 4rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-card{
+    height: 250px;
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 10px 10px 10px #d1d9e6, -15px -15px 15px #f9f9f9;
+  }
+
+  .right-card{
+    height: 300px;
+    width: 300px;
+    margin-bottom: 2rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 10px 10px 10px #d1d9e6, -15px 6px 20px #f9f9f9;
+  }
+
+  .left-side{
+    width: 300px;
+    height: 250px;
+  }
+
+  .right-side{
+    font-size: 13.5px;
+    width: 270px;
+    height: 250px;
+    margin-top: .7rem;
+  }
+  .visi-title, .misi-title, .kandidat-title{
+    font-size: var(--h2-font-size);
+  }
+
+  .vote-button{
+    width: 150px;
+    height: 45px;
+    margin-left: 2.25rem;
+    font-size: 13px;
+    font-weight: 650;
+  }
+}
+
+@media screen and (max-width: 347px){
+  .left-card{
+    height: 220px;
+    width: 240px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 10px 10px 10px #d1d9e6, -15px -15px 15px #f9f9f9;
+  }
+
+  .right-card{
+    height: 300px;
+    width: 240px;
+    margin-bottom: 2rem;
+  }
+
+  .left-side{
+    width: 240px;
+    height: 220px;
+  }
+
+  .right-side{
+    font-size: 13.5px;
+    width: 210px;
+    height: 250px;
+    margin-top: .7rem;
+  }
+
+  .vote-button{
+    width: 120px;
+    height: 43px;
+    margin-left: 1.5rem;
+    font-size: 13px;
+    font-weight: 650;
+  }
+}
+
+/* ==========   RESPONSIVE SUBMIT SECTION  ========== */
+@media screen and (max-width: 975px){
+  .success-card{
+    width: 40rem;
+    height: 7.5rem;
+  }
+
+  .fa-thumbs-up{
+    font-size: 28px;
+    margin-left: 1.5rem;
+    margin-top: 2.8rem;
+  }
+
+  .success-title{
+    margin-top: 2.8rem;
+  }
+
+  .success-text-row{
+    margin-top: 2rem;
+  }
+
+  .saran-text-row{
+    margin-top: .4rem;
+  }
+
+  .success-text-card{
+    width: 40rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .saran-text-card{
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 685px){
+  .success-card{
+    width: 20rem;
+    height: 4.5rem;
+  }
+
+  .fa-thumbs-up{
+    font-size: 22px;
+    margin-left: 1.5rem;
+    margin-top: 1.6rem;
+  }
+
+  .success-title{
+    margin-top: 2.8rem;
+    font-size: 22px;
+  }
+
+  .success-text-row{
+    margin-top: 1.5rem;
+  }
+
+  .saran-text-row{
+    margin-top: .3rem;
+  }
+
+  .success-text-card{
+    width: 20rem;
+    padding-bottom: 1rem;
+  }
+
+  .saran-text-card{
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .success-card{
+    width: 17rem;
+    height: 4.2rem;
+  }
+
+  .fa-thumbs-up{
+    font-size: 18px;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .success-title{
+    font-size: 18px;
+  }
+
+  .success-text-row{
+    margin-top: 1rem;
+  }
+
+  .saran-text-row{
+    margin-top: .3rem;
+  }
+
+  .success-text-card{
+    width: 17rem;
+    padding-bottom: 1rem;
+  }
+
+  .saran-text-card{
+    width: 17rem;
+  }
+
+  .text-success{
+    font-size: 16px;
+  }
+
+  .kritik-saran, .link-gform{
+    font-family: var(--font-theme);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray-dark);
+  }
+}
+
+@media screen and (max-width: 975px){
+  .success-card{
+    width: 40rem;
+    height: 7.5rem;
+  }
+
+  .fa-thumbs-up{
+    font-size: 28px;
+    margin-left: 1.5rem;
+    margin-top: 2.8rem;
+  }
+
+  .success-title{
+    margin-top: 2.8rem;
+  }
+
+  .success-text-row{
+    margin-top: 2rem;
+  }
+
+  .saran-text-row{
+    margin-top: .4rem;
+  }
+
+  .success-text-card{
+    width: 40rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .saran-text-card{
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 685px){
+  .success-card{
+    width: 20rem;
+    height: 4.5rem;
+  }
+
+  .fa-thumbs-up{
+    font-size: 22px;
+    margin-left: 1.5rem;
+    margin-top: 1.6rem;
+  }
+
+  .success-title{
+    margin-top: 2.8rem;
+    font-size: 22px;
+  }
+
+  .success-text-row{
+    margin-top: 1.5rem;
+  }
+
+  .saran-text-row{
+    margin-top: .3rem;
+  }
+
+  .success-text-card{
+    width: 20rem;
+    padding-bottom: 1rem;
+  }
+
+  .saran-text-card{
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .success-card{
+    width: 14rem;
+    height: 4rem;
+  }
+
+  .fa-thumbs-up{
+    font-size: 14px;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .success-title{
+    font-size: 14px;
+  }
+
+  .success-text-row{
+    margin-top: .7rem;
+  }
+
+  .saran-text-row{
+    margin-top: .3rem;
+  }
+
+  .success-text-card{
+    width: 14rem;
+    padding-bottom: 1rem;
+  }
+
+  .saran-text-card{
+    width: 14rem;
+  }
+
+  .text-success{
+    font-size: 14px;
+  }
+
+  .kritik-saran, .link-gform{
+    font-family: var(--font-theme);
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--gray-dark);
+  }
+}
+
+/* ==========   RESPONSIVE ADMIN SECTION  ========== */
+
+@media screen and (max-width: 950px){
+  .card-row-admin{
+    margin-top: 6rem;
+  }
+
+  .card-hasil{
+    height: 450px;
+  }
+
+  .card-section-hasil{
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  .card-kandidat{
+    margin-left: 2.5rem;
+    font-size: 15px;
+  }
+
+  .presentase{
+    margin-left: 3rem;
+  }
+
+  .fa-caret-down{
+    margin-left: 10rem;
+    margin-top: .75rem;
+  }
+
+  .text-show{
+    opacity: 1;
+    margin-top: 2rem;
+  }
+
+  .text{
+    margin-left: 3rem;
+    display: block;
+    font-family: var(--third-body-font);
+  }
+}
+
+@media screen and (max-width: 785px){
+  .card-row-admin{
+    margin-top: 7rem;
+  }
+
+  .card-hasil{
+    height: 420px;
+  }
+
+  .fa-caret-down{
+    margin-left: 9rem;
+    margin-top: .5rem;
+  }
+
+  .card-section-hasil{
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+
+  .card-kandidat{
+    margin-left: 2.1rem;
+    font-size: 15px;
+  }
+
+  .presentase{
+    margin-left: 2.7rem;
+  }
+
+  .text-show{
+    opacity: 1;
+    margin-top: 1.7rem;
+  }
+
+  .text{
+    margin-left: 2.7rem;
+    display: block;
+    font-family: var(--third-body-font);
+  }
+}
+
+@media screen and (max-width: 290px){
+  .card-hasil{
+    height: 420px;
+  }
+
+  .fa-caret-down{
+    margin-left: 9rem;
+    margin-top: .5rem;
+  }
+
+  .card-section-hasil{
+    margin-left: 13px;
+    margin-bottom: 5px;
+  }
+
+  .card-kandidat{
+    margin-left: 2rem;
+    font-size: 15px;
+  }
+
+  .presentase{
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 759.5px){
+  .card-row-admin{
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 550.5px){
+  .main-admin{
+    margin-top: 6.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* ==========   RESPONSIVE DAFTAR SISWA SECTION   ========== */
+@media screen and (max-width: 950px){
+  .box-body{
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 759.5px){
+  .wrapper-daftar{
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 735px){
+  .box-body{
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 590px){
+  .box-body{
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 315px){
+  .type-box{
+    width: 150px;
+    height: 38px;
+    padding-left: 10px;
+  }
+
+  .search-box{
+    height: 38px;
+  }
+
+  .box-body{
+    width: 12rem;
+  }
+}
+
+/* ==========   RESPONSIVE INPUT SECTION  ========== */
+@media screen and (max-width: 760px) {
+  .input-content{
+    margin-top: 7rem !important;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .btn-row{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-import, .btn-export{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.15px;
+  }
+  
+  .btn-export{
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+

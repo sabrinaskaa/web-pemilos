@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link href="css/mainstyle.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="css/responsive-style.css?" rel="stylesheet" type="text/css" />
-
-    <title>{{ $title }}</title>
-</head>
-<body>
-    
+@extends('layout.main')
+@section('container')
     <header class="l-header scroll-header" id="header">
         <nav class="nav bd-container">
             <div class="nav_menu">
@@ -30,34 +14,48 @@
             </div>
         </nav> 
     </header>
-
     <main>
-        
-        <section class="form_section">
-                @if(session('error'))
-                <div class="row d-flex align-items-center justify-content-center">
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    {{session('error')}}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-                @endif
-            
+        <section class="form_section mt-5">
 
+            @if($error = Session::get('error'))
+                <div class="d-flex align-items-center justify-content-center" >
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>
+                            {{ $error }}
+                        </strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>    
+                </div>
+            @endif
+            
             <div class="container a-container d-flex align-items-center" id="a-container">
-                
                 <form action="{{ route('process_login') }}" method="post" class="form d-flex flex-column" id="a-form">
-                    {{ csrf_field() }}
+                    
+                    @csrf
+
                     <h1 class="form_title title">PEMILOS</h1>
                     <h1 class="form_sub-title sub-title">2021</h1>
-                    <input class="form_input" type="text" placeholder="NIS" required name="nis">
-                    <input class="form_input" type="password" placeholder="Password" required name="password">
-                    <button class="form_button button submit" type="submit">Login</button>
+
+                    @if ($errors->has('nis'))
+                    
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>
+                                {{ $errors->first('nis') }}
+                            </strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    @endif
+                    <input class="mb-1 form_input @error('nis') is-invalid @enderror" type="text" placeholder="NIS" required name="nis">   
+
+                    <input class=" mt-1 form_input @error('password') is-invalid @enderror" type="password" placeholder="Password" required name="password">
+                    
+                        <button class="form_button button submit" type="submit">
+                            Login
+                        </button>
+                    
                 </form>
             </div>
         </section>
     </main>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+@endsection

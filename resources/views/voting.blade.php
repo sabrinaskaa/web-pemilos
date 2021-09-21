@@ -1,21 +1,7 @@
 @extends('layout.main')
 @section('container')
     @if (Auth::user()->status == "belum")
-    @include('partial.nav')
-    <body>         
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                </div>
-            </div>
-        </div>
-
-        
+        @include('partial.nav')
         <div class="card-row d-flex align-items-center">
             @foreach ($voting as $v)
             <div class="card card-1">
@@ -35,15 +21,16 @@
             @endforeach
         </div>
     @else
-        <div class="text-center">
-            <img src="assets/img/discord.png" class="img-fluid rounded">
+    <section class="form_section pt-5">
+        <div class="container a-container d-flex align-items-center">
+            <div class="form d-flex flex-column">
+                <h1 class="text-md-center text-uppercase font-weight-bold">you've already chosen</h1>    
+            </div>
         </div>
-        <h1 class="mt-5 text-center">you've already chosen</h1>
+    </section>
     @endif
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-  </body>
 
 @endsection
 

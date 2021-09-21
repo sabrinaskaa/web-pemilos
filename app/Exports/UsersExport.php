@@ -12,6 +12,6 @@ class UsersExport implements FromCollection
     */
     public function collection()
     {
-        return User::select('nis', 'nama', 'kelas')->get();
+        return User::select('nis', 'nama', 'kelas')->skip(1)->take(PHP_INT_MAX)->get();
     }
 }

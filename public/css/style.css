@@ -37,10 +37,9 @@
     box-shadow: 10px 10px 10px #d1d9e6, -10px -10px 10px #f9f9f9;
     border-radius: 20px;
   }
-
   .form_input{
     width: 325px;
-    height: 40px;
+    height: 45px;
     margin: 4px 1.5rem;
     padding-left: 25px;
     font-size: 13px;
@@ -62,7 +61,7 @@
     font-size: var(--biggest-font-size);
     line-height: 1.5;
     font-weight: 700;
-    padding-left: 6.75rem;
+    padding-left: 7rem;
     color: var(--second-color);
   }
 
@@ -415,12 +414,18 @@
     margin-bottom: 4rem;
   }
 
+  .card-hasil{
+    position: relative;
+    height: 500px;
+  }
+
   .card-section-hasil{
     position: absolute;
     width: 100%;
     bottom: 0;
     box-sizing: border-box;
-    padding: 0 15px 50px;
+    margin-left: 15px;
+    margin-bottom: 10px;
   }
 
   .card-kandidat{
@@ -444,7 +449,46 @@
     color: var(--gray-dark);
   }
 
+  .fa-caret-down{
+    margin-left: 11rem;
+    font-size: 25px;
+    margin-top: 1rem;
+    color: var(--info);
+    cursor: pointer;
+  }
+
+  .fa-caret-down:hover{
+    color: var(--purple);
+  }
+
+  .down__card{
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .down-card-text{
+    display: none;
+  }
+
+  .text-show{
+    opacity: 1;
+    margin-top: 3rem;
+  }
+
+  .text{
+    margin-left: 3.8rem;
+    display: block;
+    font-family: var(--third-body-font);
+  }
+
+  .number-vote{
+    color: var(--danger);
+  }
+
   /* ==========   DAFTAR SISWA SECTION   ========== */
+  .wrapper-daftar{
+    margin-top: 8rem;
+  }
 
   .type-box{
     height: 40px;
@@ -521,7 +565,7 @@
   
   /* ==========   INPUTAN SISWA SECTION   ========== */
   .input-content{
-    margin-top: 3rem;
+    margin-top: 8rem;
   }
 
   .alert-card{
@@ -600,3 +644,7 @@
     }
   }
 
+
+  .card-row-admin{
+    margin-top: 6rem;
+  }

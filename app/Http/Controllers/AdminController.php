@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Exports\UsersExport;
 use App\Imports\UsersImport;
 use Maatwebsite\Excel\Facades\Excel;
+use Yajra\DataTables\Facades\DataTables;
 
 class AdminController extends Controller
 {
@@ -25,11 +26,16 @@ class AdminController extends Controller
     }
 
     public function importExportView(){
-        $siswa = User::skip(1)->take(2000)->orderBy('id')->get();
+        if(request()->ajax()){
+            $siswa = User::skip(1)->take(PHP_INT_MAX)->orderBy('id')->latest()->get();
+            return DataTables::of($siswa)
+            ->addIndexColumn()
+            ->make(true);
+        }
+
         return view('admin.import',[
             "active" => "import",
             "name" => "IMPORT SISWA",
-            "daftar" => $siswa
         ]);
         
     }
@@ -53,20 +59,4 @@ class AdminController extends Controller
 
         return back();
     }
-   
-    // public function daftar(){
-
-    //     $daftar = User::latest();
-        
-    //     if(request('search')){
-    //         $daftar->where('nis', 'like', '%' . request('search'). '%')
-    //                ->orWhere('nama','like','%'.request('search').'%')
-    //                ->orWhere('kelas','like','%'.request('search').'%')
-    //                ->orWhere('status','like','%'.request('search').'%');
-    //     }
-    //     return view('admin.daftar',[
-    //         "title" => "DAFTAR SISWA",
-    //         "daftar" => $daftar->paginate(5)->withQueryString()
-    //     ]);
-    // }
 }

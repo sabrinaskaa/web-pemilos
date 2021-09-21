@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class UserController extends Controller
 {
@@ -12,23 +13,26 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {   
-        $daftar = User::orderBy('id');
-            
-        if(request('search')){
-            $daftar->where('nis', 'like', '%' . request('search'). '%')
-                   ->orWhere('nama','like','%'.request('search').'%')
-                   ->orWhere('kelas','like','%'.request('search').'%')
-                   ->orWhere('status','like','%'.request('search').'%')
-                   ->orWhere('candidate_id','like','%'.request('search').'%');
-        }
+        if(request()->ajax()){
+            $siswa = User::query();
+            return DataTables::eloquent($siswa)
+            ->addColumn('action', function($siswa){
+                return view('admin.delete',[
+                    'siswa' => $siswa,
+                    'delete' => route('daftar.destroy', $siswa->id)
+                ]);
+            })
+            ->addIndexColumn()
+            ->make(true);
+        }   
+
         return view('admin.daftar',[
             "title" => "DAFTAR SISWA",
             "active" => "daftar",
             "name" => "DAFTAR SISWA",
-            "daftar" => $daftar->paginate(10),
-            
         ]);
         
     }
