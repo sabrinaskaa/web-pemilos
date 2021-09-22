@@ -398,8 +398,8 @@
 
   .kritik-saran, .link-gform{
     font-family: var(--font-theme);
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     color: var(--gray-dark);
   }
 
