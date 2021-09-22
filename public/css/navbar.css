@@ -520,7 +520,6 @@ nav ul {
 
   .nav_title{
     margin-top: 2rem;
-    font-size: 1.75rem;
   }
 
   .nav-visi-misi{
@@ -549,7 +548,6 @@ nav ul {
 @media screen and (max-width: 324px){
   .nav_title{
     margin-top: 2rem;
-    font-size: 1.5rem;
   }
 
   .nav-visi-misi{
@@ -608,7 +606,6 @@ nav ul {
 @media screen and (max-width: 287px){
   .nav_title{
     margin-top: 2rem;
-    font-size: 1.25rem;
   }
 
   .nav_title_2{
