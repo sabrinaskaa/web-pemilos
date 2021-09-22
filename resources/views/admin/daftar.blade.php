@@ -8,7 +8,7 @@
                     <div class="col-xs-12">
                         <div class="box">
                             <div class="box-body">
-                            <table class="table table-hover table-bordered table-responsive-sm shadow-soft rounded" id="tabel_">
+                            <table class="table table-hover table-bordered table-responsive-sm shadow-soft rounded"  id="tabel_">
                                 <thead class="thead">
                                     <tr class="table-tr">
                                         <th class="table-header" scope="col">No</th>
@@ -41,7 +41,7 @@
                         {data: 'kelas', name: 'kelas', className: 'dt-body-center'},
                         {data: 'candidate_id', name: 'candidate_id', className: 'dt-body-center',
                             render: function(data, type, row){
-                                return (row.candidate_id == true) ? '<button type="button" class="btn-info btn-sm" disabled>'+row.candidate_id+'</button>' : '<button type="button" class="btn-warning btn-sm" disabled>Belum</button>'
+                                return (typeof row.candidate_id === 'number') ? '<button type="button" class="btn-info btn-sm" disabled>'+row.candidate_id+'</button>' : '<button type="button" class="btn-warning btn-sm" disabled>Belum</button>'
                             }
                         },
                         {data: 'status', name: 'status', className: 'dt-body-center',

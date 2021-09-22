@@ -37,13 +37,7 @@
                     <h1 class="form_sub-title sub-title">2021</h1>
 
                     @if ($errors->has('nis'))
-                    
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <strong>
-                                {{ $errors->first('nis') }}
-                            </strong>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
+                        {!! $errors->first('nis') !!}
                     @endif
                     <input class="mb-1 form_input @error('nis') is-invalid @enderror" type="text" placeholder="NIS" required name="nis">   
 

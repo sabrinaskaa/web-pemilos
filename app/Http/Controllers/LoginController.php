@@ -32,7 +32,12 @@ class LoginController extends Controller
                 return redirect()->intended('/login');
             }
         return back()->withErrors([
-            'nis' => 'NICE TRY LUR'
+            'nis' => "<script>Swal.fire({
+                title: 'YOU FAIL BOZO!',
+                text: 'C\'MON REMEMBER IT AGAIN',
+                icon: 'error',
+                confirmButtonText: 'OK'
+              })</script>"
         ]);
     }
 }
