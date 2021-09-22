@@ -532,7 +532,7 @@
   }
 
   .box-body{
-    width: 56rem;
+    width: 65rem;
     margin-top: 4rem;
     background-color: #ecf0f3;
     transition: 0.25s ease;
@@ -565,7 +565,7 @@
   
   /* ==========   INPUTAN SISWA SECTION   ========== */
   .input-content{
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 
   .alert-card{
@@ -628,7 +628,7 @@
   }
 
   .box-input-body{
-    width: 56rem;
+    width: 60rem;
     margin-top: 2rem;
     background-color: #ecf0f3;
     transition: 0.25s ease;
