@@ -23,6 +23,7 @@ Route::get('/', function(){
 
 Route::get('/login',[LoginController::class, 'index'])->name('login');
 Route::post('process_login', [LoginController::class, 'process_login'])->name('process_login');
+Route::post('/logout',[LoginController::class, 'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth']], function(){
     Route::group(['middleware'=> ['cek_login:admin']], function(){

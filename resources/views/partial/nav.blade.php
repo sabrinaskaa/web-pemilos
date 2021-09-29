@@ -1,4 +1,4 @@
-<header class=" mt-5 mb-5 l-header scroll-header" id="header">
+<header class=" mt-4 mb-5 l-header scroll-header" id="header">
     <nav class="nav bd-container nav-voting">
         <h2 class="nav_title">
             <span class="nav_title-1">PEMILIHAN KETUA OSIS </span>
