@@ -106,7 +106,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 4) Migration database
    ```bash
-   sail php artisan migrate:fresh
+   sail php artisan migrate:fresh --seed
    ```
 
 5) Aplikasi pemilos bisa dibuka pada http://localhost
